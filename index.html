@@ -466,17 +466,30 @@
       100% { transform: translateX(-50%); }
     }
 
-    @media (max-width: 900px) {
-      .slide-card { width: 180px; }
-      .slide { height: 130px; }
-    }
+  @media (max-width: 600px) {
+  .gallery-section { padding: 32px 0; }
 
-    @media (max-width: 600px) {
-      .gallery-section { padding: 32px 0; }
-      .slide-card { width: 124px; padding: 7px 6px 11px; }
-      .slide { height: 73px; }
-      .gallery-heading { font-size: 1.4rem; }
-    }
+  /* Super big cards for mobile view */
+  .slide-card { 
+    width: 90vw;          /* Almost full width of mobile screen */
+    padding: 15px 12px 18px; 
+  }
+
+  .slide { 
+    height: 240px;        /* Much taller images */
+  }
+
+  .gallery-heading { font-size: 1.8rem; }
+  #gallery h2 { font-size: 2.1rem; } /* Bigger heading for balance */
+  #about h2 { font-size: 2.1rem; } 
+  #facilities h2 { font-size: 2.1rem; } 
+  #plans h2 { font-size: 2.1rem; }
+  #trainers h2 { font-size: 2.1rem; }  
+  #contact h2 { font-size: 2.1rem; } 
+  #location h2 { font-size: 2.1rem; } 
+}
+
+
 
     /* Contact Section */
     .contact {
@@ -617,33 +630,57 @@
       user-select:none;
     }
     a { color: var(--primary-color);}
+    
+
+    @media (max-width: 600px) {
+      footer {
+        margin-bottom: 160px; /* Extra space below footer */
+        padding-left: 14%;
+        padding-right: 14%;
+      }
+    }
+
+
 
     /* Responsive adjustments */
     @media (max-width: 1024px) {
-      .header-text h1 { font-size: 1.5rem;}
+      .header-text h1 { font-size: 2.5rem;}
       .testimonial-card { width: 260px; padding: 20px 13px;}
     }
     @media (max-width: 768px) {
       header { justify-content:center; text-align:center;}
       .header-left { flex-direction: column; align-items: center; gap: 12px;}
-      .logo {width: 300px;height: auto;}
+      .logo {width: 250px;height: auto;}
       nav {font-size: .97rem; padding: 9px 10px;}
       nav a {padding: 7px 12px;}
       .section h2 { font-size: 1.4rem; }
       .trainer-container { grid-template-columns: 1fr; gap: 17px; }
+      .trainer-card{
+        width: 300px;
+      }
       .gallery-container { grid-template-columns: repeat(auto-fit,minmax(160px,1fr));}
-      .testimonial-container { animation-duration: 60s;}
+      .testimonial-container { animation-duration: 60s; }
+      #testimonials h2 {
+          font-size: 1.8rem;
+      }
       .facility-slider-wrapper { max-width: 99vw; }
       .facility-card { min-width: 135px; max-width: 178px; padding: 1.1rem .35rem .95rem .35rem;}
       .facility-icon { font-size: 1.3rem;}
       .facility-slider-btn{ font-size: 1.25rem; width: 30px; height:30px;}
     }
     @media (max-width: 500px) {
-      .header-text h1 { font-size: 1.08rem; }
-      .header-text p { font-size: 0.83rem; }
+      .header-text h1 { font-size: 1.5rem; }
+      .header-text p { font-size: 0.4rem; }
       nav { font-size: .81rem;}
+      #about p {
+      margin-top: 20px;
+      font-size: 1rem;
+      padding-left: 15%;
+      padding-right: 8%;
+    }
       .facility-card { min-width: 105px; }
     }
+    
 
     /* visually hidden helper (won't affect design) */
     .sr-only {
