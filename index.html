@@ -471,12 +471,14 @@
 
   /* Super big cards for mobile view */
   .slide-card { 
-    width: 90vw;          /* Almost full width of mobile screen */
+    width: 100vw;          /* Almost full width of mobile screen */
     padding: 15px 12px 18px; 
   }
 
   .slide { 
-    height: 240px;        /* Much taller images */
+    width: 80%;          /* Take full width of card */
+    height: auto;         /* Adjust height automatically */
+    object-fit: cover;    /* Keeps a nice crop without stretching */
   }
 
   .gallery-heading { font-size: 1.8rem; }
