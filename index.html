@@ -489,6 +489,19 @@
   #location h2 { font-size: 2.1rem; } 
 }
 
+@media (max-width: 600px) {
+  .membership-image {
+    height: 400px;
+    object-fit: contain; /* ensures the image scales without cropping */
+  }
+  .section img{
+    width: 380px;
+  }
+  #plans h3{
+    font-size: 6rem;
+    color: rgb(0, 255, 242);
+  }
+}
 
 
     /* Contact Section */
@@ -552,13 +565,13 @@
     }
     #plans h3{
       margin: 1%;
-      color:rgba(255, 119, 0, 0.902);
+      color: rgb(0, 255, 242);
       letter-spacing: 1px;
       font-size: 20px;
     }
     #plans h3 a {
       text-decoration: none;
-      color:rgba(255, 68, 0, 0.772);
+      color: rgb(0, 255, 242);
     }
 
     .whatsapp-chat {
@@ -679,7 +692,8 @@
       padding-right: 8%;
     }
       .facility-card { min-width: 105px; }
-    }
+      
+    
     
 
     /* visually hidden helper (won't affect design) */
@@ -837,8 +851,8 @@
     <h2>Membership Plans</h2>
     <img src="price3.png" alt="Membership plans and pricing at HyperX Gym near Nagavara - gym offers and discounts" class="membership-image" />
     <a href="https://wa.me/919620521223?text=Hi%20HyperXgym%2C%20I%20would%20like%20to%20know%20more%20about%20your%20membership%20plans." target="_blank" rel="noopener noreferrer">
-      <h3>HyperXgym sale is live — discounts up to 20-70%.</h3>
-      <h3>Get exact prices (click here)</h3>
+      <h3 >HyperXgym sale is live — discounts up to 20-70%.</h3>
+      <h3 class="sale-text-small">Get exact prices (click here)</h3>
     </a>
     <div class="plans-content" style="margin-top:18px;">
       <h3>Opening Offers & USPs</h3>
